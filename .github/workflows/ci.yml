@@ -48,7 +48,6 @@ jobs:
       run_debug: 'false'
 
   # macos:
-  #   if: github.repository_owner == 'AcademySoftwareFoundation'
   #   needs: detect-changes
   #   uses: ./.github/workflows/ci-macos.yml
   #   with:
@@ -57,7 +56,6 @@ jobs:
   #     run_debug: 'false'
 
   windows:
-    if: github.repository_owner == 'AcademySoftwareFoundation'
     needs: detect-changes
     uses: ./.github/workflows/ci-windows.yml
     with:
